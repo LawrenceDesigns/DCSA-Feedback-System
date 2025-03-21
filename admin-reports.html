@@ -1,0 +1,79 @@
+<!-- 5. admin-reports.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li class="section-li"><small>Overview</small></li>
+                    <li><a href="admin-dashboard.html">Dashboard</a></li>
+                    <li class="section-li"><small>Student Actions</small></li>
+                    <li><a href="admin-pending-feedback.html">Pending Feedback</a></li>
+                    <li><a href="admin-approved-feedback.html">Approved Feedbacks</a></li>
+                    <li><a href="admin-pending-students.html">Pending Student Accounts</a></li>
+                    <li><a href="admin-registered-students.html">Registered Student Accounts</a></li>
+                    <li><a href="admin-manage-topics.html">Manage Topics</a></li>
+                    <li><a href="admin-manage-announcements.html">Manage Announcements</a></li>
+                    <li class="section-li"><small>Admin Actions</small></li>
+                    <li><a href="admin-users.html">Manage Admin Accounts</a></li>
+                    <li><a href="admin-reports.html" class="active">View Reports</a></li>
+                    <li><a href="admin-audit-log.html">Audit Log</a></li>
+                </ul>
+            </nav>
+            <div class="logout-button-container">
+                <button id="admin-logout">Logout</button>
+                <button id="go-back">Go Back</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h1>Reports</h1>
+
+            <h2>Feedback Statistics</h2>
+
+            <div>
+                <label><input type="radio" name="time-period" value="all" checked> All Time</label>
+                <label><input type="radio" name="time-period" value="last-week"> Last Week</label>
+                <label><input type="radio" name="time-period" value="last-15-days"> Last 15 Days</label>
+                <label><input type="radio" name="time-period" value="last-year"> Last Year</label>
+            </div>
+
+            <p>Total Feedback: <span id="total-feedback"></span></p>
+
+            <h3>By Status:</h3>
+            <ul>
+                <li>Pending: <span id="pending-count"></span></li>
+                <li>Approved: <span id="approved-count"></span></li>
+                <li>Rejected: <span id="rejected-count"></span></li>
+            </ul>
+
+            <h3>By Priority:</h3>
+            <ul>
+                <li>Very High: <span id="very-high-count"></span></li>
+                <li>High: <span id="high-count"></span></li>
+                <li>Medium: <span id="medium-count"></span></li>
+                <li>Low: <span id="low-count"></span></li>
+            </ul>
+              <h3>By Type:</h3>
+                <ul>
+                    <li>Feedback: <span id="feedback-type-count"></span></li>
+                    <li>Complaint: <span id="complaint-type-count"></span></li>
+                    <li>Idea: <span id="idea-type-count"></span></li>
+                </ul>
+            <p>
+              <a href="privacy.html">Privacy Policy</a>
+            </p>
+        </main>
+    </div>
+
+    <script src="adminScript.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

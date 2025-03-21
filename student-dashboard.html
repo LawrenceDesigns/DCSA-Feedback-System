@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="student-dashboard.html" class="active">Student Dashboard</a></li>
+                    <li><a href="student-suggest-topic.html">Suggest a Topic</a></li>
+                    <li><a href="student-change-password.html">Change Password</a></li>
+                </ul>
+            </nav>
+            <div class="logout-button-container">
+                <button id="logout-button">Logout</button>
+                <button id="go-back-student">Go Back</button> <!-- Added Go Back -->
+            </div>
+        </aside>
+        <main class="main-content">
+          <h1>Welcome, <span id="student-name"></span>!</h1>
+          <p>This is your dashboard.  You can submit feedback and view your feedback history here.</p>
+
+          <h2>Submit Feedback</h2>
+          <form id="feedback-form">
+              <label for="topic">Topic:</label>
+              <select id="topic" name="topic"></select><br><br>
+
+              <label for="feedback-type">Type:</label>
+              <select id="feedback-type" name="feedback-type">
+                  <option value="feedback">Feedback</option>
+                  <option value="complaint">Complaint</option>
+                  <option value="idea">Idea</option>
+              </select><br><br>
+
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+              <button type="submit">Submit Feedback</button>
+          </form>
+          <p id="feedback-message"></p>
+          <h2>Your Feedback History</h2>
+           <table id="feedback-history-table">
+              <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Topic</th>
+                    <th>Type</th>
+                    <th>Message</th>
+                    <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+           </table>
+          <p>
+            <a href="privacy.html">Privacy Policy</a>
+          </p>
+        </main>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggest a Topic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="student-dashboard.html">Student Dashboard</a></li>
+                    <li><a href="student-suggest-topic.html" class="active">Suggest a Topic</a></li>
+                    <li><a href="student-change-password.html">Change Password</a></li>
+                </ul>
+            </nav>
+            <div class="logout-button-container">
+                <button id="logout-button">Logout</button>
+                <button id="go-back-student">Go Back</button> <!-- Added Go Back -->
+            </div>
+        </aside>
+        <main class="main-content">
+            <h1>Suggest a Topic</h1>
+
+            <form id="suggest-topic-form">
+                <label for="suggested-topic">Topic:</label>
+                <input type="text" id="suggested-topic" name="topic" required><br><br>
+
+                <button type="submit">Submit Suggestion</button>
+            </form>
+            <p id="suggestion-message"></p>
+            <p>
+                  <a href="privacy.html">Privacy Policy</a>
+                </p>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

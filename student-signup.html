@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <main class="main-content">
+          <h1>Student Signup</h1>
+          <form id="signup-form">
+              <label for="studentId">Student ID:</label>
+              <input type="text" id="studentId" name="studentId" required><br><br>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br><br>
+
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required><br><br>
+
+              <button type="submit">Submit for Approval</button>
+          </form>
+          <p id="signup-message"></p>
+          <p>Already have an account? <a href="student-login.html">Login</a></p>
+          <p><a href="privacy.html">Privacy Policy</a></p>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
